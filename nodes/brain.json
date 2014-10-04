@@ -1,0 +1,12 @@
+{
+  "name": "brain",
+  "chef_environment": "development",
+  "run_list": [
+    "recipe[vim]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

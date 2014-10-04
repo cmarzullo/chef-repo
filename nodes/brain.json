@@ -2,7 +2,7 @@
   "name": "brain",
   "chef_environment": "development",
   "run_list": [
-    "recipe[vim]"
+    "role[base]"
   ],
   "normal": {
     "tags": [

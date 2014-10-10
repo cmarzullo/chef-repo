@@ -9,16 +9,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'chef/centos-6.5'
   config.vm.boot_timeout = '60'
 
-   config.vm.provision :chef_client do |chef|
-     chef.chef_server_url = "https://api.opscode.com/organizations/sevenmen"
-     chef.validation_client_name = "sevenmen-validator"
-     chef.validation_key_path = ".chef/sevenmen-validator.pem"
-   end
+  ## Setup Chef
+  config.omnibus.chef_version = :latest
+  config.vm.provision :chef_client do |chef|
+    chef.chef_server_url = "https://api.opscode.com/organizations/sevenmen"
+    chef.validation_client_name = "sevenmen-validator"
+    chef.validation_key_path = ".chef/sevenmen-validator.pem"
+  end
+
+  # Build first node
   config.vm.define 'smia-00' do |smia|
 
     smia.vm.network 'public_network', ip: '192.168.200.210'
     smia.vm.hostname = 'smia-00'
 
+    # VMware Specifics
     smia.vm.provider 'vmware_workstation' do |v|
       # Don't boot with headless mode
       v.gui = true

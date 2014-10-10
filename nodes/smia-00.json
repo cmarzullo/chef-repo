@@ -1,0 +1,12 @@
+{
+  "name": "smia-00",
+  "chef_environment": "development",
+  "run_list": [
+    "role[base]"
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

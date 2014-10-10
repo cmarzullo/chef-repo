@@ -9,6 +9,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'chef/centos-6.5'
   config.vm.boot_timeout = '60'
 
+   config.vm.provision :chef_client do |chef|
+     chef.chef_server_url = "https://api.opscode.com/organizations/sevenmen"
+     chef.validation_client_name = "sevenmen-validator"
+     chef.validation_key_path = ".chef/sevenmen-validator.pem"
+   end
   config.vm.define 'smia-00' do |smia|
 
     smia.vm.network 'public_network', ip: '192.168.200.210'

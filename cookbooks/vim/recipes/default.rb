@@ -13,8 +13,8 @@ end
 
 cookbook_file '/etc/skel/.vimrc' do
   source 'dot_vimrc'
-    owner 'root'
-    group 'root'
+  owner 'root'
+  group 'root'
   mode '0644'
 end
 

@@ -22,9 +22,6 @@
 [submodule "cookbooks/chef_handler"]
 	path = cookbooks/chef_handler
 	url = https://github.com/opscode-cookbooks/chef_handler.git
-[submodule "cookbooks/virtualbox-guest-additions-cookbook"]
-	path = cookbooks/virtualbox-guest-additions-cookbook
-	url = https://github.com/patrickayoup/virtualbox-guest-additions-cookbook.git
 [submodule "cookbooks/ntp"]
 	path = cookbooks/ntp
 	url = https://github.com/cookbooks/ntp.git

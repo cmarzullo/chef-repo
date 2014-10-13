@@ -23,5 +23,6 @@ end
 include_recipe 'smi-omnibus::_chef-client'
 include_recipe 'smi-omnibus::_git'
 include_recipe 'vim'
+include_recipe 'ntp'
 
 include_recipe 'smi-omnibus::_desktop'

@@ -19,7 +19,7 @@ when 'rhel'
 	# Install Packages
 	node[:vbox][:guest][:packages].each do |p|
 		package p do
-			action :install, :delayed
+			action :install
 		end
 	end
 

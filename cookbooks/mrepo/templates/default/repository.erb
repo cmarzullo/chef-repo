@@ -1,0 +1,15 @@
+# This file managed by Chef
+[<%= @config.repoid %>]
+name     = <%= @config.desc %>
+release  = <%= @config.release %>
+arch     = <%= @config.arch %>
+metadata = <%= @config.metadata %>
+
+### ISO images
+iso = <%= @config.iso %>
+
+<% if @config.sources -%>
+<%   @config.sources.each do |key, value| -%>
+<%= key %> = <%= value %>
+<%   end -%>
+<% end -%>

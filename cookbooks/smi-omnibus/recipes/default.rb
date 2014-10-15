@@ -25,4 +25,4 @@ include_recipe 'smi-omnibus::_git'
 include_recipe 'vim'
 include_recipe 'ntp'
 
-include_recipe 'smi-omnibus::_desktop'
+#include_recipe 'smi-omnibus::_desktop'

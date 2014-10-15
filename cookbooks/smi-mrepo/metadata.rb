@@ -5,7 +5,7 @@ license          'All rights reserved'
 description      'Installs/Configures smi-mrepo'
 long_description 'Installs/Configures smi-mrepo'
 
-version          '0.5.0'
+version          '0.5.1'
 
-depends 'mrepo', '= 0.5.0'
+depends 'mrepo', '= 0.5.1'
 

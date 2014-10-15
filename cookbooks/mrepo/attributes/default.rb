@@ -1,4 +1,4 @@
-default[:mrepo][:packages] = %W{ mrepo createrepo yum-utils lftp }
+default[:mrepo][:packages] = %w{ mrepo createrepo yum-utils lftp }
 default[:mrepo][:config][:srcdir] = '/var/mrepo'
 default[:mrepo][:config][:wwwdir] = '/var/www/mrepo'
 default[:mrepo][:config][:confdir] = '/etc/mrepo.conf.d'

@@ -5,4 +5,5 @@ default[:mrepo][:config][:confdir] = '/etc/mrepo.conf.d'
 
 default[:mrepo][:config][:mailto] = 'root@localhost'
 default[:mrepo][:config][:smtpserver] = 'localhost'
+default[:mrepo][:config][:cron] = nil
 

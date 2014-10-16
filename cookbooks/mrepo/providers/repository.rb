@@ -14,7 +14,5 @@ action :create do
     cookbook 'mrepo'
   end
 
-  log "Mrepo #{new_resource.repoid} created."
-
 end
 

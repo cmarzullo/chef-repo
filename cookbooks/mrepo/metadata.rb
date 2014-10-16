@@ -5,7 +5,7 @@ license          'All rights reserved'
 description      'Installs/Configures mrepo'
 long_description 'Installs/Configures mrepo'
 
-version          '0.5.1'
+version          '0.5.2'
 
 depends 'yum', '> 3.0.0'
 depends 'yum-epel', '= 0.5.1'

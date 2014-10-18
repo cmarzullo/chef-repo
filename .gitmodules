@@ -25,3 +25,6 @@
 [submodule "cookbooks/ntp"]
 	path = cookbooks/ntp
 	url = https://github.com/cookbooks/ntp.git
+[submodule "cookbooks/httpd"]
+	path = cookbooks/httpd
+	url = https://github.com/opscode-cookbooks/httpd.git

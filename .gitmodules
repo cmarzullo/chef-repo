@@ -28,3 +28,21 @@
 [submodule "cookbooks/httpd"]
 	path = cookbooks/httpd
 	url = https://github.com/opscode-cookbooks/httpd.git
+[submodule "cookbooks/mrepo"]
+	path = cookbooks/mrepo
+	url = git@github.com:cmarzullo/mrepo.git
+[submodule "cookbooks/katello"]
+	path = cookbooks/katello
+	url = git@github.com:cmarzullo/katello.git
+[submodule "cookbooks/openssl"]
+	path = cookbooks/openssl
+	url = https://github.com/opscode-cookbooks/openssl.git
+[submodule "cookbooks/java"]
+	path = cookbooks/java
+	url = https://github.com/agileorbit-cookbooks/java.git
+[submodule "cookbooks/chef-sugar"]
+	path = cookbooks/chef-sugar
+	url = https://github.com/sethvargo/chef-sugar.git
+[submodule "cookbooks/selinux"]
+	path = cookbooks/selinux
+	url = https://github.com/skottler/selinux.git

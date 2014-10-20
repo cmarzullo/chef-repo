@@ -15,7 +15,7 @@ include_recipe 'smi-omnibus::_yum'
 case node[:virtualization][:system]
 when 'vbox'
 	log 'This VM is vbox'
-	include_recipe 'smi-omnibus::_vbox'
+	#include_recipe 'smi-omnibus::_vbox'
 when 'vmware'
 	log 'This VM is vmware'
 end

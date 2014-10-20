@@ -46,3 +46,12 @@
 [submodule "cookbooks/selinux"]
 	path = cookbooks/selinux
 	url = https://github.com/skottler/selinux.git
+[submodule "cookbooks/omnibus"]
+	path = cookbooks/omnibus
+	url = https://github.com/opscode-cookbooks/omnibus.git
+[submodule "cookbooks/build-essential"]
+	path = cookbooks/build-essential
+	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule "cookbooks/wix"]
+	path = cookbooks/wix
+	url = https://github.com/opscode-cookbooks/wix.git

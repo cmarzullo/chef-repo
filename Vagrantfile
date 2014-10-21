@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Lets make a local mrepo!
   config.vm.define 'smia-repo' do |repo|
-    repo.vm.hostname = 'smia-repo'
+    repo.vm.hostname = 'smia-repo.sevenman.in'
     repo.vm.network 'public_network'
     # repo.vm.network 'private_network', ip: '192.168.201.210'
 

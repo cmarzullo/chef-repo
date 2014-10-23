@@ -5,7 +5,7 @@ license          'All rights reserved'
 description      'Installs/Configures smi-katello'
 long_description 'Installs/Configures smi-katello'
 
-version          '0.2.0'
+version          '0.2.1'
 
-depends 'katello', '= 0.2.0'
+depends 'katello', '= 0.2.1'
 

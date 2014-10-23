@@ -55,3 +55,6 @@
 [submodule "cookbooks/wix"]
 	path = cookbooks/wix
 	url = https://github.com/opscode-cookbooks/wix.git
+[submodule "cookbooks/iptables"]
+	path = cookbooks/iptables
+	url = https://github.com/opscode-cookbooks/iptables.git

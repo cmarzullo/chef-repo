@@ -1,13 +1,24 @@
 
 # Chef Client settings
+default[:chef_client][:load_gems][:chef_handler_foreman][:require_name] = 'chef_handler_foreman'
 default[:chef_client][:config][:ssl_verify_mode] = ':verify_peer'
 default[:chef_client][:config][:client_fork] = true
 default[:chef_client][:config][:chef_server_url] = 'https://api.opscode.com/organizations/sevenmen'
 default[:chef_client][:config][:validation_client_name] = 'sevenmen-validator'
 default[:chef_client][:config][:validation_key] = '/etc/chef/sevenmen-validator.pem'
+default[:chef_client][:config][:foreman_facts_upload] = true
+default[:chef_client][:config][:foreman_reports_upload] = true
+
+default[:chef_client][:config][:foreman_server_options] = ":url => \'https://smia-katello.sevenman.in/\', :foreman_ssl_ca => \'/etc/rhsm/ca/katello-server-ca.pem\', :foreman_ssl_cert => \'/etc/pki/consumer/cert.pem\', :foreman_ssl_key => \'/etc/pki/consumer/key.pem\'"
+
+#default[:chef_client][:config][:report_handlers] = true
+default[:chef_client][:config][:reports_log_level] = 'notice'
 
 # Yum Globals
 default[:yum][:main][:keepcache] = true
+default[:yum][:epel_subcription_manager][:baseurl] = 'http://repos.fedorapeople.org/repos/candlepin/subscription-manager/epel-$releasever/$basearch/'
+default[:yum][:epel_subcription_manager][:description] = 'Tools and libraries for Red Hat subscription management.'
+default[:yum][:epel_subcription_manager][:gpgcheck] = false
 
 # Virtual Box Repo Information
 # information is from: http://wiki.centos.org/HowTos/Virtualization/VirtualBox

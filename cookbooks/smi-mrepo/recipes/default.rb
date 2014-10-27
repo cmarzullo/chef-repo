@@ -17,7 +17,7 @@ directory node[:smimrepo][:cifs][:mount] do
   action :create
 end
 mount node[:smimrepo][:cifs][:mount] do
-  device '//192.168.200.16/mrepo-data'
+  device '//192.168.200.10/mrepo-data'
   action [:mount, :enable]
   fstype 'cifs'
   options 'username=mrepo,password=mrepo,sec=ntlm'
